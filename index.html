@@ -1,8 +1,62 @@
-<html>
-<h1>
-<center>Pertandingan Tenis Meja 
-</h1>
-<h2><center> PT.MSP</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .banner {
+            position: relative; /* Untuk overlay dan konten relatif terhadap banner */
+            background-image: url('banner.jpeg'); /* URL gambar latar belakang */
+            background-size: cover; /* Gambar menutupi seluruh banner */
+            background-position: center; /* Gambar berada di tengah */
+            color: white;
+            text-align: center;
+            padding: 50px 20px; /* Padding dalam banner */
+            font-size: 2em; /* Ukuran font dalam banner */
+            height: 300px; /* Tinggi banner */
+        }
+        .banner::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Overlay gelap pada gambar */
+        }
+        .banner-content {
+            position: relative; /* Supaya konten tetap berada di atas overlay */
+            z-index: 1; /* Konten di atas overlay */
+        }
+        .container {
+            max-width: 1200px; /* Lebar maksimal konten */
+            margin: 0 auto; /* Center konten */
+            padding: 20px; /* Padding luar konten */
+        }
+    </style>
+</head>
+<body>
 
-<iframe src="https://brackethq.com/b/f2a6b/embed/" width="100%" height="1100" frameborder="0"></iframe>
+    <div class="banner">
+        <div class="banner-content">
+            <div class="container">
+                
+               
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+	<h1><center>Pertandingan Tenis Meja PT. MSP</h1>
+        <h2><iframe src="https://brackethq.com/b/f2a6b/embed/" width="100%" height="1100" frameborder="0"></iframe></h2>
+      
+    </div>
+
+</body>
 </html>
